@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loveify - Gizlilik Politikası ve Kullanım Koşulları</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #6c5ce7;
+            --secondary: #a29bfe;
+            --accent: #fd79a8;
+            --light: #f7f7f7;
+            --dark: #2d3436;
+            --gray: #636e72;
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --radius: 12px;
+            --transition: all 0.3s ease;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background: linear-gradient(135deg,#f5f7fa 0%,#c3cfe2 100%); color: var(--dark); line-height:1.6; min-height:100vh; padding:20px; }
+        .container { max-width:1200px; margin:0 auto; }
+        header { background:white; border-radius:var(--radius); padding:25px; margin-bottom:30px; box-shadow:var(--shadow); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+        .logo { display:flex; align-items:center; gap:15px; }
+        .logo-icon { background:var(--primary); color:white; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:24px; }
+        .logo-text h1 { font-size:28px; color:var(--primary); margin-bottom:5px; }
+        .logo-text p { color:var(--gray); font-size:14px; }
+        .language-toggle { background: var(--light); border-radius:30px; padding:8px; display:flex; box-shadow:0 4px 10px rgba(0,0,0,0.05); }
+        .lang-btn { padding:10px 20px; border:none; background:transparent; border-radius:20px; cursor:pointer; font-weight:600; transition:var(--transition); display:flex; align-items:center; gap:8px; }
+        .lang-btn.active { background:var(--primary); color:white; }
+        .content-wrapper { display:grid; grid-template-columns:1fr 1fr; gap:30px; }
+        @media (max-width:900px) { .content-wrapper { grid-template-columns:1fr; } }
+        .policy-card, .terms-card { background:white; border-radius:var(--radius); padding:30px; box-shadow:var(--shadow); margin-bottom:30px; transition:var(--transition); }
+        .policy-card:hover, .terms-card:hover { transform:translateY(-5px); box-shadow:0 15px 35px rgba(0,0,0,0.15); }
+        h2 { color:var(--primary); margin-bottom:20px; padding-bottom:10px; border-bottom:2px solid var(--secondary); font-size:24px; display:flex; align-items:center; gap:10px; }
+        h3 { color:var(--dark); margin:25px 0 15px; font-size:20px; }
+        p { margin-bottom:15px; color:var(--gray); }
+        ul { padding-left:20px; margin-bottom:20px; }
+        li { margin-bottom:10px; color:var(--gray); }
+        .highlight { background: rgba(108,92,231,0.1); border-left:4px solid var(--primary); padding:15px; margin:20px 0; border-radius:0 var(--radius) var(--radius) 0; }
+        .contact-info { background: linear-gradient(135deg,var(--primary),var(--secondary)); color:white; padding:20px; border-radius:var(--radius); margin:30px 0; text-align:center; }
+        .contact-info h3 { color:white; margin-bottom:10px; }
+        .email-link { color:white; text-decoration:none; font-weight:600; font-size:18px; display:inline-block; margin-top:10px; transition:var(--transition); }
+        .email-link:hover { text-decoration:underline; transform:scale(1.05); }
+        footer { text-align:center; margin-top:50px; padding:20px; color:var(--gray); font-size:14px; }
+        .language-content { display:none; }
+        .language-content.active { display:block; }
+        .section-number { background: var(--primary); color:white; width:30px; height:30px; border-radius:50%; display:inline-flex; align-items:center; justify-content:center; margin-right:10px; font-size:14px; font-weight:bold; }
+        .back-to-top { position:fixed; bottom:30px; right:30px; background:var(--primary); color:white; width:50px; height:50px; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer; box-shadow:var(--shadow); transition:var(--transition); z-index:100; opacity:0; visibility:hidden; }
+        .back-to-top.show { opacity:1; visibility:visible; }
+        .back-to-top:hover { background:var(--accent); transform:translateY(-5px); }
+    </style>
+</head>
+<body>
+<div class="container">
+<header>
+    <div class="logo">
+        <div class="logo-icon"><i class="fas fa-heart"></i></div>
+        <div class="logo-text"><h1>Loveify</h1><p>Privacy Policy & Terms of Service</p></div>
+    </div>
+    <div class="language-toggle">
+        <button class="lang-btn active" data-lang="tr"><i class="fas fa-flag"></i> Türkçe</button>
+        <button class="lang-btn" data-lang="en"><i class="fas fa-flag-usa"></i> English</button>
+    </div>
+</header>
+
+<div class="content-wrapper">
+<div class="policy-card">
+    <!-- Türkçe -->
+    <div class="language-content active" id="policy-tr">
+        <h2><i class="fas fa-shield-alt"></i> Gizlilik Politikası</h2>
+        <p><strong>Loveify</strong> ("biz", "uygulamamız") gizliliğinize saygı duyar ve kişisel bilgilerinizi korumayı taahhüt eder...</p>
+        <h3><span class="section-number">1</span> Topladığımız Bilgiler</h3>
+        <ul>
+            <li>Hesap Bilgileri (E-posta, kullanıcı adı, parola)</li>
+            <li>Kullanıcı İçeriği (Uygulama içi oluşturulan içerikler)</li>
+            <li>Satın Alma Geçmişi (Google Cloud Firestore)</li>
+            <li>Otomatik Toplanan Veriler (Cihaz, IP, ekran etkileşimleri)</li>
+            <li>Tanılama Verileri (Crashlytics, Performance Monitoring)</li>
+        </ul>
+        <h3><span class="section-number">2</span> Bilgilerin Kullanımı</h3>
+        <ul>
+            <li>Uygulamayı sunmak ve sürdürmek</li>
+            <li>Uygulamayı geliştirmek</li>
+            <li>Reklam göstermek</li>
+            <li>İletişim kurmak</li>
+        </ul>
+        <h3><span class="section-number">3</span> İşleme Hukuki Dayanağı (AB)</h3>
+        <ul>
+            <li>Sözleşmenin ifası</li>
+            <li>Meşru menfaatler</li>
+            <li>Kişiselleştirilmiş reklam için onay</li>
+        </ul>
+        <h3><span class="section-number">4</span> Bilgi Paylaşımı</h3>
+        <ul>
+            <li>Hizmet Sağlayıcılar (Firebase, Google Ads)</li>
+            <li>Yasal zorunluluklar</li>
+        </ul>
+        <h3><span class="section-number">5</span> Veri Saklama</h3>
+        <p>Bilgiler yasal yükümlülükler ve politikalar için gerekli süre saklanır.</p>
+        <h3><span class="section-number">6</span> Veri Koruma Hakları</h3>
+        <p>Firebase standart güvenlik önlemleri uygulanır. %100 güvenlik garanti edilmez.</p>
+        <h3><span class="section-number">7</span> Çocukların Gizliliği</h3>
+        <p>18 yaş ve üzeri kullanıcılar için uygundur.</p>
+        <h3><span class="section-number">8</span> Uluslararası Aktarımlar</h3>
+        <p>Veriler uluslararası sunuculara aktarılabilir.</p>
+        <h3><span class="section-number">9</span> Uygulama İçi Satın Alımlar ve İade</h3>
+        <p>Tüketilebilir satın alımlar iade edilmez, mağaza politikaları dışında.</p>
+        <h3><span class="section-number">10</span> Misafir Hesaplar</h3>
+        <p>Misafir kullanıcılar satın alımları başka cihaza aktaramayabilir, hesap oluşturulması tavsiye edilir.</p>
+        <h3><span class="section-number">11</span> Değişiklikler</h3>
+        <p>Gizlilik Politikası güncellenebilir ve güncel versiyon bu sayfada yayınlanır.</p>
+        <div class="contact-info">
+            <h3><i class="fas fa-envelope"></i> İletişim</h3>
+            <a href="mailto:contactmyappscompany23@gmail.com" class="email-link">contactmyappscompany23@gmail.com</a>
+        </div>
+    </div>
+    <!-- İngilizce -->
+    <div class="language-content" id="policy-en">
+        <h2><i class="fas fa-shield-alt"></i> Privacy Policy</h2>
+        <p><strong>Loveify</strong> ("we", "our app") respects your privacy and is committed to protecting your personal information...</p>
+        <h3><span class="section-number">1</span> Information We Collect</h3>
+        <ul>
+            <li>Account Information (Email, username, password)</li>
+            <li>User Content (Created inside the App)</li>
+            <li>Purchase History (Google Cloud Firestore)</li>
+            <li>Automatically Collected Data (Device, IP, screen interactions)</li>
+            <li>Diagnostic Data (Crashlytics, Performance Monitoring)</li>
+        </ul>
+        <h3><span class="section-number">2</span> How We Use Your Information</h3>
+        <ul>
+            <li>Provide and maintain the App</li>
+            <li>Improve the App</li>
+            <li>Display advertisements</li>
+            <li>Communicate with you</li>
+        </ul>
+        <h3><span class="section-number">3</span> Legal Basis for Processing (EU)</h3>
+        <ul>
+            <li>Contract performance</li>
+            <li>Legitimate interests</li>
+            <li>Consent for personalized advertising</li>
+        </ul>
+        <h3><span class="section-number">4</span> Sharing Information</h3>
+        <ul>
+            <li>Service Providers (Firebase, Google Ads)</li>
+            <li>Legal requirements</li>
+        </ul>
+        <h3><span class="section-number">5</span> Data Retention</h3>
+        <p>We retain your information as long as necessary to fulfill legal obligations and enforce policies.</p>
+        <h3><span class="section-number">6</span> Data Protection Rights</h3>
+        <p>Firebase standard security measures are applied. No online service is 100% secure.</p>
+        <h3><span class="section-number">7</span> Children's Privacy</h3>
+        <p>For users 18 years and older.</p>
+        <h3><span class="section-number">8</span> International Transfers</h3>
+        <p>Data may be transferred to servers outside your country.</p>
+        <h3><span class="section-number">9</span> In-App Purchases & Refunds</h3>
+        <p>Consumable purchases are non-refundable except as required by law or store policies.</p>
+        <h3><span class="section-number">10</span> Guest Accounts</h3>
+        <p>Guest purchases may not transfer to other devices; creating an account is recommended.</p>
+        <h3><span class="section-number">11</span> Changes</h3>
+        <p>The Privacy Policy may be updated. Latest version will be on this page.</p>
+        <div class="contact-info">
+            <h3><i class="fas fa-envelope"></i> Contact</h3>
+            <a href="mailto:contactmyappscompany23@gmail.com" class="email-link">contactmyappscompany23@gmail.com</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<footer>
+    &copy; 2026 Loveify. All rights reserved.
+</footer>
+
+<div class="back-to-top" id="back-to-top"><i class="fas fa-chevron-up"></i></div>
+
+<script>
+    const langBtns = document.querySelectorAll('.lang-btn');
+    const langContents = document.querySelectorAll('.language-content');
+
+    langBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            langBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const lang = btn.dataset.lang;
+            langContents.forEach(c => c.classList.remove('active'));
+            document.getElementById('policy-' + lang).classList.add('active');
+        });
+    });
+
+    const backTop = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+        if(window.scrollY > 300) backTop.classList.add('show');
+        else backTop.classList.remove('show');
+    });
+    backTop.addEventListener('click', () => window.scrollTo({top:0, behavior:'smooth'}));
+</script>
+</body>
+</html>
