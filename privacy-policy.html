@@ -287,6 +287,7 @@
         </header>
         
         <div class="content-wrapper">
+            <!-- GİZLİLİK POLİTİKASI -->
             <div class="policy-card">
                 <div class="language-content active" id="policy-tr">
                     <h2><i class="fas fa-shield-alt"></i> Gizlilik Politikası</h2>
@@ -302,7 +303,7 @@
                     <ul>
                         <li><strong>Hesap Bilgileri:</strong> E-posta, kullanıcı adı ve parola (Firebase Authentication).</li>
                         <li><strong>Kullanıcı İçeriği:</strong> Uygulama içinde oluşturduğunuz içerikler.</li>
-                        <li><strong>Satın Alma Geçmişi:</strong> Google Cloud Firestore aracılığıyla bağlanan uygulama içi satın alma verileri.</li>
+                        <li><strong>Satın Alma ve Abonelik Geçmişi:</strong> Google Cloud Firestore ve RevenueCat aracılığıyla işlenen uygulama içi satın alma verileri, abonelik durumu ve faturalandırma bilgileri.</li>
                     </ul>
                     
                     <h4>b. Otomatik Olarak Toplanan Bilgiler (Kullanım & Tanılama)</h4>
@@ -325,6 +326,7 @@
                     <ul>
                         <li>Uygulamayı sunmak ve sürdürmek</li>
                         <li>Uygulamayı geliştirmek</li>
+                        <li>Abonelik durumlarını ve uygulama içi satın alımları doğrulamak (RevenueCat aracılığıyla)</li>
                         <li>Reklam göstermek</li>
                         <li>Sizinle iletişim kurmak</li>
                     </ul>
@@ -339,6 +341,7 @@
                     <h3><span class="section-number">4</span> Bilgilerin Paylaşılması</h3>
                     <ul>
                         <li>Hizmet Sağlayıcılar (Firebase, Google Ads)</li>
+                        <li><strong>RevenueCat:</strong> Abonelik yönetimi, ödeme doğrulama ve uygulama içi satın alma analitiği amacıyla kullanılır.</li>
                         <li>Yasal zorunluluklar</li>
                     </ul>
                     
@@ -358,8 +361,9 @@
                     <h3><span class="section-number">8</span> Uluslararası Aktarımlar</h3>
                     <p>Bilgileriniz, ülkeniz dışındaki sunuculara aktarılabilir. Uygun güvenlik önlemleri alınmaktadır.</p>
                     
-                    <h3><span class="section-number">9</span> Uygulama İçi Satın Alımlar ve İade Politikası</h3>
-                    <p>Uygulamamız tüketilebilir uygulama içi satın alımlar sunmaktadır. Bu satın alımlar Google Play veya Apple App Store üzerinden güvenli bir şekilde gerçekleştirilir. Tüketilebilir uygulama içi satın alımlar iade edilmez, yasal zorunluluklar veya ilgili mağazaların politikaları dışında.</p>
+                    <h3><span class="section-number">9</span> Uygulama İçi Satın Alımlar, Abonelikler ve İade Politikası</h3>
+                    <p>Uygulamamız tüketilebilir uygulama içi satın alımlar ve <strong>otomatik yenilenen abonelikler</strong> sunmaktadır. Bu işlemler Apple App Store veya Google Play Store hesaplarınız üzerinden güvenli bir şekilde gerçekleştirilir ve abonelik statüleri RevenueCat tarafından doğrulanır.</p>
+                    <p>Abonelikler, mevcut fatura döneminin bitiminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir. Yenileme ücreti, dönemin bitimine 24 saat kala hesabınızdan tahsil edilir. Tüketilebilir uygulama içi satın alımlar ve abonelik yenilemeleri kural olarak iade edilmez. İade süreçleri tamamen ilgili uygulama mağazalarının (Apple ve Google) politikalarına ve inisiyatifine tabidir.</p>
                     
                     <h3><span class="section-number">10</span> Misafir Hesaplar</h3>
                     <p>Uygulamayı hesap oluşturmadan misafir olarak kullanabilirsiniz. Ancak misafir olarak uygulama içi satın alma yaparsanız bu satın alımlar cihazınıza bağlı olabilir ve başka bir cihaza aktarılamayabilir. Satın alımlarınızın güvenliği için uygulama içi satın alma yapmadan önce bir hesap oluşturmanızı önemle tavsiye ederiz.</p>
@@ -388,7 +392,7 @@
                     <ul>
                         <li><strong>Account Information:</strong> Email, username, and password (Firebase Authentication).</li>
                         <li><strong>User Content:</strong> Content you create within the App.</li>
-                        <li><strong>Purchase History:</strong> In-app purchase data linked via Google Cloud Firestore.</li>
+                        <li><strong>Purchase & Subscription History:</strong> In-app purchase data, subscription status, and billing information linked via Google Cloud Firestore and processed by RevenueCat.</li>
                     </ul>
                     
                     <h4>b. Automatically Collected Information (Usage & Diagnostics)</h4>
@@ -411,6 +415,7 @@
                     <ul>
                         <li>To provide and maintain the App</li>
                         <li>To improve the App</li>
+                        <li>To validate subscription statuses and in-app purchases (via RevenueCat)</li>
                         <li>To display advertisements</li>
                         <li>To communicate with you</li>
                     </ul>
@@ -425,6 +430,7 @@
                     <h3><span class="section-number">4</span> Sharing of Information</h3>
                     <ul>
                         <li>Service Providers (Firebase, Google Ads)</li>
+                        <li><strong>RevenueCat:</strong> Used for subscription management, payment validation, and in-app purchase analytics.</li>
                         <li>Legal requirements</li>
                     </ul>
                     
@@ -444,8 +450,9 @@
                     <h3><span class="section-number">8</span> International Transfers</h3>
                     <p>Your information may be transferred to servers located outside your country. Appropriate security measures are taken.</p>
                     
-                    <h3><span class="section-number">9</span> In-App Purchases and Refund Policy</h3>
-                    <p>Our App offers consumable in-app purchases. These purchases are made securely through Google Play or Apple App Store. Consumable in-app purchases are non-refundable, except as required by law or the policies of the respective stores.</p>
+                    <h3><span class="section-number">9</span> In-App Purchases, Subscriptions and Refund Policy</h3>
+                    <p>Our App offers consumable in-app purchases and <strong>auto-renewable subscriptions</strong>. These transactions are securely processed through your Apple App Store or Google Play Store accounts, and subscription statuses are verified by RevenueCat.</p>
+                    <p>Subscriptions automatically renew unless canceled at least 24 hours before the end of the current billing period. Your account will be charged for renewal within 24 hours prior to the end of the current period. Consumable in-app purchases and subscription renewals are generally non-refundable. All refund requests are strictly subject to the respective app store's (Apple or Google) policies and discretion.</p>
                     
                     <h3><span class="section-number">10</span> Guest Accounts</h3>
                     <p>You can use the App as a guest without creating an account. However, if you make in-app purchases as a guest, these purchases may be tied to your device and may not be transferable to another device. For the security of your purchases, we strongly recommend creating an account before making in-app purchases.</p>
@@ -461,6 +468,7 @@
                 </div>
             </div>
             
+            <!-- KULLANIM KOŞULLARI -->
             <div class="terms-card">
                 <div class="language-content active" id="terms-tr">
                     <h2><i class="fas fa-file-contract"></i> Kullanım Koşulları</h2>
@@ -472,24 +480,28 @@
                     <p>Uygulamayı kullanmak için en az 18 yaşında olmalısınız. Uygulamayı kullanarak bu yaş şartını karşıladığınızı teyit edersiniz.</p>
                     
                     <h3><span class="section-number">3</span> Uygulamanın Kullanımı</h3>
-                    <p>Uygulama sadece eğlence amaçlıdır (çiftler/partnerler için oyunlar, görevler ve meydan okumalar).  Uygulamayı kötüye kullanmamayı veya yasa dışı amaçlarla kullanmamayı kabul edersiniz. Uygulama içeriği cinsel nitelikte olabilir ve kesinlikle yetişkinler içindir.</p>
+                    <p>Uygulama sadece eğlence amaçlıdır (çiftler/partnerler için oyunlar, görevler ve meydan okumalar). Uygulamayı kötüye kullanmamayı veya yasa dışı amaçlarla kullanmamayı kabul edersiniz. Uygulama içeriği cinsel nitelikte olabilir ve kesinlikle yetişkinler içindir.</p>
                     
                     <h3><span class="section-number">4</span> Hesaplar</h3>
                     <p>Belirli özellikleri kullanmak için bir kullanıcı adı ve e-posta adresi ile hesap oluşturmalısınız. Hesabınızın güvenliğini sağlamak sizin sorumluluğunuzdadır. Bu Koşulları ihlal eden hesapları askıya alma veya sonlandırma hakkımız saklıdır.</p>
                     
-                    <h3><span class="section-number">5</span> Veri ve Gizlilik</h3>
+                    <h3><span class="section-number">5</span> Abonelikler, Otomatik Yenileme ve Ücretlendirme</h3>
+                    <p>Uygulamamız, premium içeriklere erişim sağlamak için RevenueCat aracılığıyla yönetilen otomatik yenilenen abonelikler (örneğin; haftalık, aylık veya yıllık) sunabilir. Abonelikler, mevcut fatura döneminin bitiminden en az 24 saat önce otomatik yenileme kapatılmadığı sürece aynı süre ve fiyattan otomatik olarak yenilenir. Yenileme ödemesi, mevcut dönemin bitimine 24 saat kala hesabınızdan tahsil edilecektir.</p>
+                    <p>Aboneliklerinizi satın alma işleminden sonra cihazınızın Hesap Ayarları (App Store / Google Play) bölümünden yönetebilir ve iptal edebilirsiniz. Uygulama silinse dahi aboneliğiniz iptal olmaz; ayarlar menüsünden manuel olarak iptal etmeniz gerekmektedir. İade işlemleri tamamen Apple ve Google'ın inisiyatifindedir; geliştirici olarak bizim doğrudan iade işlemi yapma veya onaylama yetkimiz bulunmamaktadır.</p>
+                    
+                    <h3><span class="section-number">6</span> Veri ve Gizlilik</h3>
                     <p>Uygulamayı kullanarak Gizlilik Politikamızı kabul etmiş olursunuz. Veriler, Firebase kullanılarak güvenli bir şekilde saklanır ve yönetilir.</p>
                     
-                    <h3><span class="section-number">6</span> Sorumluluk Sınırlaması</h3>
+                    <h3><span class="section-number">7</span> Sorumluluk Sınırlaması</h3>
                     <p>Uygulama herhangi bir garanti olmaksızın "olduğu gibi" sunulur. Uygulamanın kullanımından doğan herhangi bir hasar, kayıp veya sonuçtan sorumlu değiliz.</p>
                     
-                    <h3><span class="section-number">7</span> Fesih</h3>
+                    <h3><span class="section-number">8</span> Fesih</h3>
                     <p>Bu Koşulları ihlal ederseniz veya hizmeti kötüye kullanırsanız, Uygulamaya erişiminizi askıya alma veya sonlandırma hakkımız saklıdır.</p>
                     
-                    <h3><span class="section-number">8</span> Değişiklikler</h3>
+                    <h3><span class="section-number">9</span> Değişiklikler</h3>
                     <p>Bu Koşulları istediğimiz zaman değiştirme veya güncelleme hakkımız saklıdır. Uygulamayı kullanmaya devam etmeniz, güncellenmiş Koşulları kabul ettiğiniz anlamına gelir.</p>
                     
-                    <h3><span class="section-number">9</span> İletişim</h3>
+                    <h3><span class="section-number">10</span> İletişim</h3>
                     <p>Bu Koşullar hakkında sorularınız varsa, lütfen bizimle iletişime geçin: <strong>contactmyappscompany23@gmail.com</strong></p>
                     
                     <div class="highlight">
@@ -512,19 +524,23 @@
                     <h3><span class="section-number">4</span> Accounts</h3>
                     <p>To use certain features, you must create an account with a username and email address. You are responsible for keeping your account secure. We reserve the right to suspend or terminate accounts that violate these Terms.</p>
                     
-                    <h3><span class="section-number">5</span> Data and Privacy</h3>
+                    <h3><span class="section-number">5</span> Subscriptions, Auto-Renewal, and Billing</h3>
+                    <p>Our App may offer auto-renewable subscriptions (e.g., weekly, monthly, or yearly) managed via RevenueCat to grant access to premium content. Subscriptions automatically renew at the same price and duration unless auto-renew is turned off at least 24-hours before the end of the current billing period. Your account will be charged for renewal within 24-hours prior to the end of the current period.</p>
+                    <p>You can manage and cancel your subscriptions by going to your device's Account Settings (App Store / Google Play) after purchase. Deleting the app does not automatically cancel your subscription; you must cancel it manually. Refunds are handled entirely at the discretion of Apple or Google; as developers, we do not have the ability to process or approve direct refunds.</p>
+                    
+                    <h3><span class="section-number">6</span> Data and Privacy</h3>
                     <p>By using the App, you agree to our Privacy Policy. Data is stored and managed securely using Firebase.</p>
                     
-                    <h3><span class="section-number">6</span> Limitation of Liability</h3>
+                    <h3><span class="section-number">7</span> Limitation of Liability</h3>
                     <p>The App is provided "as is" without any warranties. We are not responsible for any damages, losses, or consequences resulting from the use of the App.</p>
                     
-                    <h3><span class="section-number">7</span> Termination</h3>
+                    <h3><span class="section-number">8</span> Termination</h3>
                     <p>We may suspend or terminate your access to the App if you violate these Terms or misuse the service.</p>
                     
-                    <h3><span class="section-number">8</span> Changes</h3>
+                    <h3><span class="section-number">9</span> Changes</h3>
                     <p>We reserve the right to modify or update these Terms at any time. Continued use of the App constitutes acceptance of the updated Terms.</p>
                     
-                    <h3><span class="section-number">9</span> Contact</h3>
+                    <h3><span class="section-number">10</span> Contact</h3>
                     <p>If you have any questions about these Terms, please contact us at: <strong>contactmyappscompany23@gmail.com</strong></p>
                     
                     <div class="highlight">
